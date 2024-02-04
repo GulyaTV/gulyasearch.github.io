@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GulyaSearch Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #009688; /* Вы можете изменить цвет, используя свой код цвета */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <img src="/static/logo.png" alt="GulyaSearch Logo" width="100">
+    <h1>Search Results for '{{ query }}'</h1>
+    <ul>
+        {% for result in results %}
+            <li>{{ result['content'] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

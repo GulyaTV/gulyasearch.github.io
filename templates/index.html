@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GulyaSearch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #009688; /* Вы можете изменить цвет, используя свой код цвета */
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+            font-size: 1em;
+        }
+
+        input[type="submit"] {
+            padding: 5px 10px;
+            font-size: 1em;
+            background-color: #009688; /* Вы можете изменить цвет, используя свой код цвета */
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+            input[type="submit"]:hover {
+                background-color: #00796b; /* Измените цвет при наведении, если хотите */
+            }
+    </style>
+</head>
+<body>
+    <img src="/static/logo.png" alt="GulyaSearch Logo" width="100">
+    <h1>GulyaSearch</h1>
+    <form action="/search" method="post">
+        <label for="query">Search:</label>
+        <input type="text" id="query" name="query" required>
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>
